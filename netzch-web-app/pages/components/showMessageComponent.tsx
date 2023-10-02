@@ -17,8 +17,8 @@ export default function ShowMessageComponent(props: ShowMessageComponentProps) {
           Update Messages
         </button>
         <ul className={styles.list}>
-          {props.messages.map((x) => {
-            return <li>{x.getMessage()}</li>;
+          {props.messages.map((x, index) => {
+            return <li key={index}>{x.getMessage()}</li>;
           })}
         </ul>
       </div>

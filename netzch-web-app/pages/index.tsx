@@ -9,7 +9,7 @@ export default function Home() {
   const updateMessage = useCallback(getMessage, []);
 
   async function getMessage() {
-    const result = await fetch("https://localhost:7288/message");
+    const result = await fetch("http://localhost:5161/message");
     const data = await result.json();
     const messages = [];
     data.forEach((data) => {

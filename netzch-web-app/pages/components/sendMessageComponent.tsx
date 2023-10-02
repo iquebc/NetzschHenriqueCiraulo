@@ -13,8 +13,9 @@ export default function SendMessageComponent(props: SendMessageComponentProps) {
       e.target.message.value,
       e.target.userName.value
     );
-    const result = await fetch("https://localhost:7288/message", {
+    const result = await fetch("http://localhost:5161/message", {
       method: "POST",
+
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(message),
     });
