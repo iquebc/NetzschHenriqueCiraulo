@@ -25,6 +25,9 @@ export default function Home() {
 
   return (
     <>
+      <header>
+        <img src="Netzsch.png" style={{width:"200px", margin:"0 auto", display:"block"}}></img>
+      </header>
       <SendMessageComponent updateMessage={updateMessage}></SendMessageComponent>
       <ShowMessageComponent messages={messages} updateMessage={updateMessage}></ShowMessageComponent>
     </>
